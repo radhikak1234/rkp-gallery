@@ -30,7 +30,7 @@ class Header extends Component {
         </div>
         <div className="menu-container row col-md-8">
           <div className="col-md-8 header-name">
-            <p onClick={(e) => this.goHome(e)}>Radhika K Photography</p>
+            <p className="border-box" onClick={(e) => this.goHome(e)}>Radhika K Photography</p>
           </div>
           <div className="col-md-2">
             <p onClick={(e) => this.goAboutMe(e)}> About me</p>
