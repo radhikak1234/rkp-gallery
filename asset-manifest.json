@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/rkp-gallery/static/css/main.34de6062.chunk.css",
+    "main.js": "/rkp-gallery/static/js/main.fd3c003c.chunk.js",
+    "main.js.map": "/rkp-gallery/static/js/main.fd3c003c.chunk.js.map",
+    "runtime~main.js": "/rkp-gallery/static/js/runtime~main.dd867537.js",
+    "runtime~main.js.map": "/rkp-gallery/static/js/runtime~main.dd867537.js.map",
+    "static/css/2.61a677ff.chunk.css": "/rkp-gallery/static/css/2.61a677ff.chunk.css",
+    "static/js/2.1b231901.chunk.js": "/rkp-gallery/static/js/2.1b231901.chunk.js",
+    "static/js/2.1b231901.chunk.js.map": "/rkp-gallery/static/js/2.1b231901.chunk.js.map",
+    "index.html": "/rkp-gallery/index.html",
+    "precache-manifest.14a3a6f9300a09b64b24822ce9c334d7.js": "/rkp-gallery/precache-manifest.14a3a6f9300a09b64b24822ce9c334d7.js",
+    "service-worker.js": "/rkp-gallery/service-worker.js",
+    "static/css/2.61a677ff.chunk.css.map": "/rkp-gallery/static/css/2.61a677ff.chunk.css.map",
+    "static/css/main.34de6062.chunk.css.map": "/rkp-gallery/static/css/main.34de6062.chunk.css.map"
+  }
+}

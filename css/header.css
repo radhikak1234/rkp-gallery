@@ -1,0 +1,28 @@
+.logo-black{
+  height: 90px;
+  width: 90px;
+}
+.menu-container{
+  margin-top: 28px;
+  margin-left: 16px;
+  background-color: #f8f9fa00
+}
+.menu-option-container{
+  margin-top: 28px;
+}
+
+
+.border-box{
+  border-style: solid;
+  text-align: center;
+  padding: 10px;
+}
+
+.header-fixed{
+  position:fixed;
+  width: -webkit-fill-available;
+  height: 100px;
+  top:0;
+  z-index: 100;
+  background-color: rgba(255, 255, 255, 0.38)
+}
