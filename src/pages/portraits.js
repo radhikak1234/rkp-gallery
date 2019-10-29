@@ -1,37 +1,51 @@
-import React, { Component } from "react";
+import React, { Component, useState, useCallback } from "react";
 import Header from "../components/header.js";
 import { withRouter } from "react-router-dom";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
-import { Carousel } from 'react-responsive-carousel';
-class Portraits extends Component {
-  render(){
-    const photos = [
+//import { Carousel } from 'react-responsive-carousel';
+import Gallery from 'react-photo-gallery';
 
+
+class Portraits extends Component {
+render(){
+
+
+
+    const photos = [
       {
-        original: process.env.PUBLIC_URL+'/images/priscilla/pri1.jpg',
-        thumbnail: process.env.PUBLIC_URL+'/images/priscilla/pri1.jpg',
-      }
+        src: process.env.PUBLIC_URL+'/images/priscilla/pri1.jpg',
+        width: 3,
+        height: 4
+      },{
+        src: process.env.PUBLIC_URL+'/images/home/home1.jpg',
+        width: 4,
+        height: 3
+      },{
+        src: process.env.PUBLIC_URL+'/images/priscilla/pri3.jpg',
+        width: 4,
+        height: 3
+      },
+      {
+      src: process.env.PUBLIC_URL+'/images/home/home2.jpg',
+      width: 4,
+      height: 3
+    },{
+      src: process.env.PUBLIC_URL+'/images/home/home2.jpg',
+      width: 4,
+      height: 3
+    }
     ];
 
     return(
       <div>
         <Header/>
         <div class="body">
-        <Carousel>
-                <div>
-                    <img src={process.env.PUBLIC_URL+"/images/priscilla/pri3.jpg"} />
-                </div>
-                <div>
-                    <img src={process.env.PUBLIC_URL+"/images/priscilla/pri3.jpg"} />
-                </div>
-                <div>
-                    <img src={process.env.PUBLIC_URL+"/images/priscilla/pri3.jpg"}/>
-                </div>
-          </Carousel>
+          <Gallery photos={photos}/>
+
         </div>
       </div>
     )
-  }
+}
 }
 
 export default withRouter(Portraits);

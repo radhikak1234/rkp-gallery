@@ -24,22 +24,17 @@ class Header extends Component {
 
   render(){
     return(
-      <div className="row header-fixed">
-        <div className="col-md-4">
+      <div className="header-fixed">
+        <div>
           <img onClick={(e) => this.goHome(e)} className="logo-black" src={process.env.PUBLIC_URL+"/logo/rkp_BLACK.png"}></img>
         </div>
-        <div className="menu-container row col-md-8">
-          <div className="col-md-8 header-name">
-            <p className="border-box" onClick={(e) => this.goHome(e)}>Radhika K Photography</p>
+          <div className="centered-nav">
+            <a onClick={(e) => this.goHome(e)} className="border-box font-raleway">RADHIKA K PHOTOGRAPHY</a>
           </div>
-          <div className="col-md-2">
-            <p onClick={(e) => this.goAboutMe(e)}> About me</p>
+          <div className="col-sm-11 right-nav">
+            <a className="float-right" onClick={(e) => this.goAboutMe(e)}>ABOUT ME</a>
+            <a class="float-right" onClick={(e) => this.goPortraits(e)}>PORTRAITS</a>
           </div>
-          <div className="col-md-2">
-            <p onClick={(e) => this.goPortraits(e)}>Portraits</p>
-          </div>
-
-        </div>
 
       </div>
     )

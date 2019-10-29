@@ -12,7 +12,8 @@ class Home extends Component {
       <div>
         <Header/>
         <div class="body">
-        <Carousel>
+        <Carousel
+          infiniteLoop useKeyboardArrows autoPlay dynamicHeight centerMode centerSlidePercentage={77} interval={2000}>
                 <div>
                     <img src={process.env.PUBLIC_URL+"/images/home/home1.jpg"} />
                 </div>
