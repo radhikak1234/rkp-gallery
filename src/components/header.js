@@ -9,9 +9,7 @@ class Header extends Component {
   }
 
   goHome(e){
-    console.log("before");
     this.props.history.push('/');
-    console.log("after");
   }
 
   goAboutMe(e){
@@ -20,23 +18,32 @@ class Header extends Component {
   goPortraits(e){
     this.props.history.push('/portraits')
   }
+  goGallery(e){
+    this.props.history.push('/gallery')
+  }
 
 
   render(){
     return(
-      <div className="header-fixed">
-        <div>
-          <img onClick={(e) => this.goHome(e)} className="logo-black" src={process.env.PUBLIC_URL+"/logo/rkp_BLACK.png"}></img>
-        </div>
-          <div className="centered-nav">
-            <a onClick={(e) => this.goHome(e)} className="border-box font-raleway">RADHIKA K PHOTOGRAPHY</a>
-          </div>
-          <div className="col-sm-11 right-nav">
-            <a className="float-right" onClick={(e) => this.goAboutMe(e)}>ABOUT ME</a>
-            <a class="float-right" onClick={(e) => this.goPortraits(e)}>PORTRAITS</a>
-          </div>
+      <nav>
+      <ul className="header-fixed">
+          <img onClick={(e) => this.goHome(e)} className="vertical-stack logo-black" src={process.env.PUBLIC_URL+"/logo/rkp_BLACK.png"}></img>
+          <li className="rkpBox vertical-stack">
+            <a onClick={(e) => this.goHome(e)} className="vertical-stack border-box font-raleway">RADHIKA K PHOTOGRAPHY</a>
+          </li>
+          <li className="menuContainer">
+            <div>
+              <a className="menuItem vertical-stack" onClick={(e) => this.goAboutMe(e)}>ABOUT ME</a>
+            </div>
+            <div>
+                <a className="menuItem vertical-stack" onClick={(e) => this.goPortraits(e)}>PORTRAITS</a>
+            </div><div>
+                <a className="menuItem vertical-stack" onClick={(e) => this.goGallery(e)}>GALLERY</a>
+            </div>
+          </li>
 
-      </div>
+      </ul>
+      </nav>
     )
   }
 }

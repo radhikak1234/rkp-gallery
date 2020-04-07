@@ -8,21 +8,20 @@ class Home extends Component {
 
 
   render(){
+    var photoList = [];
+    for (var i = 1; i <= 13; i++){
+      photoList.push(<div>
+          <img src={process.env.PUBLIC_URL+"/images/home/home"+i+".jpg"} />
+      </div>);
+    }
+
     return(
       <div>
         <Header/>
         <div class="body">
         <Carousel
           infiniteLoop useKeyboardArrows autoPlay dynamicHeight centerMode centerSlidePercentage={77} interval={2000}>
-                <div>
-                    <img src={process.env.PUBLIC_URL+"/images/home/home1.jpg"} />
-                </div>
-                <div>
-                    <img src={process.env.PUBLIC_URL+"/images/home/home2.jpg"} />
-                </div>
-                <div>
-                    <img src={process.env.PUBLIC_URL+"/images/home/home1.jpg"}/>
-                </div>
+          {photoList}
           </Carousel>
         </div>
       </div>

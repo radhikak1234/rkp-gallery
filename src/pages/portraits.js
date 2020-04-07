@@ -8,9 +8,6 @@ import Gallery from 'react-photo-gallery';
 
 class Portraits extends Component {
 render(){
-
-
-
     const photos = [
       {
         src: process.env.PUBLIC_URL+'/images/priscilla/pri1.jpg',
@@ -41,7 +38,6 @@ render(){
         <Header/>
         <div class="body">
           <Gallery photos={photos}/>
-
         </div>
       </div>
     )
