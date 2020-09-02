@@ -1,7 +1,11 @@
 .body{
   margin-top:100px;
+
 }
 
 .text-box{
-  margin: 24px 24px;
+  /* background-image: url("/images/couples/couple14.png"); */
+  margin: 24px;
+  padding: 36px;
+  text-align: center;
 }

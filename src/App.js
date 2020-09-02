@@ -4,6 +4,7 @@ import Home from "./pages/home.js"
 import AboutMe from "./pages/aboutme.js"
 import Portraits from "./pages/portraits.js"
 import Gallery from "./pages/gallery.js"
+import Couples from "./pages/couples.js"
 
 class App extends Component{
 
@@ -37,6 +38,12 @@ class App extends Component{
           <Route exact={true} path="/gallery"
             render={(props) =>
               <Gallery
+                {...props}
+              />}
+          />
+          <Route exact={true} path="/couples"
+            render={(props) =>
+              <Couples
                 {...props}
               />}
           />

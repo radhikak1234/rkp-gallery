@@ -38,29 +38,26 @@ class AboutMe extends Component {
     return(
       <div>
         <Header/>
-        <div class="body">
+        <div className="body">
           <div className="text-box">
-              <p> Hi, I'm Radhika Kshirsagar and this is the lens through which I see the world.</p>
-              <p>Growing up, I've often found myself drawn to the aesthetic nature of moments, people, and things around us. I soon realized that without a camera, these things that jumped out at me would remain fleeting. I worked my first job in 2011 to buy myself my first Canon DSLR. Since then, my constantly updating collection of lenses and bodies have never left my side. In the past 8 years, I've been fortunate to share my passion with friends, families, and strangers who have become my clients. There is no greater feeling I've felt than capturing timeless photos while my clients live their most precious moments.</p>
+              <p> Hi, I'm Radhika and I love <i>love</i>.</p>
+              <p> This is what made me fall in love with photography - by allowing me to be a fly on the wall in my clients' most intimate moments,
+              in which I get to witness love (through my lenses) on the widest spectrum. Whether it's love for a person, love for a passion, love for a family,
+              or an organization - I'm here to capture it for you. I pride myself in ensuring you feel natural in front of the camera - like I'm not even there!
+              I make sure to get to know my clients first, and hear their love story. I want to feel like your old friend during the shoot, so that I can capture
+              you in your truest form. There is no greater feeling I've felt than capturing timeless photos while my clients live their most precious moments.</p>
               <p>If you're interested in booking me in the NY/NJ area, I've done a variety of shoots including:</p>
               <ul>
 
                 <li>Proposal & Engagements</li>
-
-                <li>Birthdays/Celebrations</li>
-
-                <li>Anniversary Parties</li>
-
-                <li>Prom/Graduation Shoots</li>
-
+                <li>Birthdays & Celebrations</li>
+                <li>Individual/Family Portraits</li>
+                <li>Prom & Graduation Shoots</li>
                 <li>Dance Competitions (Fusion, Raas, Hip Hop)</li>
+                <li>Professional Headshots</li>
 
-                <li>Solo and Group Shoots, Professional Headshots</li>
-
-                <li>Headshots for Creatives</li>
-              
               </ul>
-              <p>However, if what you're looking for isn't on this list, I'm always open to stepping out of my comfort zone and put everything I have into capturing your special moments.</p>
+              <p>However, if what you're looking for isn't on this list, I'm always open to stepping out of my comfort zone and putting everything I have into capturing your special moments.</p>
           </div>
           <Gallery
             images={IMAGES1}
