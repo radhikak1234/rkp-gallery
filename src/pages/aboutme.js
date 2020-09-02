@@ -45,7 +45,9 @@ class AboutMe extends Component {
               in which I get to witness love (through my lenses) on the widest spectrum. Whether it's love for a person, love for a passion, love for a family,
               or an organization - I'm here to capture it for you. I pride myself in ensuring you feel natural in front of the camera - like I'm not even there!
               I make sure to get to know my clients first, and hear their love story. I want to feel like your old friend during the shoot, so that I can capture
-              you in your truest form. There is no greater feeling I've felt than capturing timeless photos while my clients live their most precious moments.</p>
+              you in your truest form.</p>
+
+              <p> A little bit about me: I started photographing in 2011 purely as passion. It turned into a side business towards the end of my college years where I would photograph dancers and graduates! I moved to New York City and started photographing anything and everything. My absolute favorite things to photograph is any manifestation of love. I pour my heart into taking and editing your photos. It is the one thing in life I become a perfectionist about and I will do everything in my power to make my client happy with their keepsakes.</p>
               <p>If you're interested in booking me in the NY/NJ area, I've done a variety of shoots including:</p>
               <ul>
 
