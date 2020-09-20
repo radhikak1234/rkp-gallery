@@ -26,22 +26,25 @@ class Header extends Component {
 
   render(){
     return(
-      <nav>
-      <ul className="header-fixed">
-      <Menu >
-        <a id="home" className="menu-item" href="/">HOME</a>
-        <a id="about-me" className="menu-item" href="/about-me">ABOUT ME</a>
-        <a id="gallery" className="menu-item" href="/gallery">GALLERY</a>
-        <a id="portraits" className="menu-item" href="/portraits">PORTRAITS</a>
-      </Menu>
-      <li className="rkpBox vertical-stack">
-        <a onClick={(e) => this.goHome(e)} className="vertical-stack border-box font-raleway">RADHIKA K PHOTOGRAPHY</a>
-      </li>
+      <nav className="header-fixed">
+      <div className="rkpBox right">
+        <img onClick={(e) => this.goHome(e)} className="vertical-stack logo-black" src={process.env.PUBLIC_URL+"/logo/rkp_BLACK.png"}></img>
+      </div>
+      <div className="rkpBox center">
+        <a onClick={(e) => this.goHome(e)} className="col-xs-12 vertical-stack border-box font-raleway">RADHIKA K PHOTOGRAPHY</a>
+      </div>
+      <div id="outer-container">
+        <Menu >
+          <a id="home" className="menu-item" href="/">HOME</a>
+          <a id="about-me" className="menu-item" href="/about-me">ABOUT ME</a>
+          <a id="gallery" className="menu-item" href="/gallery">GALLERY</a>
+          <a id="portraits" className="menu-item" href="/portraits">PORTRAITS</a>
+        </Menu>
+      </div>
 
-          <img onClick={(e) => this.goHome(e)} className="vertical-stack logo-black" src={process.env.PUBLIC_URL+"/logo/rkp_BLACK.png"}></img>
 
-      </ul>
       </nav>
+
     )
   }
 }

@@ -1,14 +1,35 @@
 .logo-black{
-  height: 90px;
-  width: 90px;
+  width: 100%;
+ max-width: 60px;
+ height: auto;
+ position: relative;
+ top: 16px;
+ right: 20px;
+ padding-bottom: 16px;
+}
+
+.rkpBox{
+    width: -webkit-fill-available;
+    flex-basis: 100%;
+    height: min-content;
+    display: flex;
+
+}
+.center{
+  justify-content: center;
+}
+
+.right{
+  justify-content: flex-end;
 }
 
 .font-raleway{
-  font-family: raleway,sans-serif;
-  letter-spacing: 1px;
+  font-weight: 100
   text-align: center;
+  font-size: 1.5vw;
 }
 .border-box{
+  margin: 8px;
   border-width: thin;
   border-style: solid;
   text-align: center;
@@ -20,30 +41,16 @@
 }
 
 .header-fixed{
-  padding-inline-start: 0px;
   position:fixed;
   width: -webkit-fill-available;
-  height: 100px;
+  height: 140px;
   top:0;
   z-index: 100;
   background-color: rgba(255, 255, 255, 0.72);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.menuContainer{
-  display: flex;
-  justify-content: space-around;
 }
 
 li{
   list-style-type: none
-}
-
-.menuItem{
-  padding: 30px 10px;
-  transition: all .5s ease;
-  white-space: nowrap;
 }
 
 

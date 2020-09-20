@@ -1,6 +1,7 @@
 'use strict';
 import React, { Component } from "react";
 import Header from "../components/header.js"
+import Pagetitle from "../components/pagetitle.js";
 import { withRouter } from "react-router-dom";
 import Gallery from 'react-grid-gallery';
 const photoConfigs = require("../settings/couples.js")
@@ -17,7 +18,7 @@ class Couples extends Component {
     return(
       <div className="body">
         <Header/>
-        <div className="page-title">couples</div>
+        <Pagetitle title="couples"/>
         <Gallery
           images={photos}
           enableImageSelection={false}

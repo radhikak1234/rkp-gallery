@@ -1,6 +1,4 @@
-.body{
-  margin-top:100px;
-}
+
 .image-thumbnail{
   height:200px;
   width:300px;
@@ -10,12 +8,12 @@
 .gallery-container{
   margin-top:100px;
   display:flex;
-  justify-content: space-around;
+  justify-content: center;
   flex-wrap: wrap;
 }
 
 .gallery-item{
-  padding-bottom: 24px;
+  padding: 24px;
   position: relative;
   text-align: center;
   color: black;

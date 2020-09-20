@@ -2,7 +2,7 @@ import React, { Component, useState, useCallback } from "react";
 import Header from "../components/header.js";
 import { withRouter } from "react-router-dom";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
-//import { Carousel } from 'react-responsive-carousel';
+import Pagetitle from "../components/pagetitle.js";
 import Gallery from 'react-photo-gallery';
 
 
@@ -36,6 +36,7 @@ render(){
     return(
       <div>
         <Header/>
+        <Pagetitle title="portraits"/>
         <div class="body">
           <Gallery photos={photos}/>
         </div>

@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import Header from "../components/header.js"
+import Pagetitle from "../components/pagetitle.js";
 import { withRouter } from "react-router-dom";
 
 
@@ -15,6 +16,7 @@ class Gallery extends Component {
     return(
       <div className="body">
       <Header/>
+      <Pagetitle title="gallery"/>
       <div className="gallery-container">
         <div className="gallery-item">
           <img onClick={(e) => this.goCouples(e)} className="image-thumbnail" src={process.env.PUBLIC_URL+"/images/couples/couple3.jpg"}></img>

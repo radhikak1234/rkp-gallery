@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import Header from "../components/header.js";
+import Pagetitle from "../components/pagetitle.js";
 import { withRouter } from "react-router-dom";
 import Carousel, { Modal, ModalGateway } from 'react-images';
 import Gallery from 'react-grid-gallery';
@@ -34,11 +35,13 @@ class AboutMe extends Component {
 
   render(){
     const { modalIsOpen } = this.state;
+    const title = "COUPLES";
 
     return(
       <div>
         <Header/>
         <div className="body">
+          <Pagetitle title="about the photographer"/>
           <div className="text-box">
               <p> Hi, I'm Radhika and I love <i>love</i>.</p>
               <p> This is what made me fall in love with photography - by allowing me to be a fly on the wall in my clients' most intimate moments,
