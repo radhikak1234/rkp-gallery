@@ -1,11 +1,16 @@
 .body{
   margin-top:140px;
-
 }
 
 .text-box{
-  /* background-image: url("/images/couples/couple14.png"); */
   margin: 24px;
   padding: 36px;
   text-align: center;
+}
+
+.mapContainer{
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 24px;
 }

@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Home from "./pages/home.js"
 import AboutMe from "./pages/aboutme.js"
-import Portraits from "./pages/portraits.js"
+import Places from "./pages/places.js"
 import Gallery from "./pages/gallery.js"
 import Couples from "./pages/couples.js"
 
@@ -29,9 +29,9 @@ class App extends Component{
               {...props}
             />}
           />
-          <Route exact={true} path="/portraits"
+          <Route exact={true} path="/places"
             render={(props) =>
-              <Portraits
+              <Places
                 {...props}
               />}
           />

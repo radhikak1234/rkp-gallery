@@ -24,14 +24,12 @@
 }
 
 .font-raleway{
-  font-weight: 100
+  font-weight: 100;
   text-align: center;
   font-size: 1.5vw;
 }
 .border-box{
   margin: 8px;
-  border-width: thin;
-  border-style: solid;
   text-align: center;
   padding: 10px;
   letter-spacing: 6px;
