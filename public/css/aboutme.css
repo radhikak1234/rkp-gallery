@@ -1,7 +1,16 @@
 .body{
-  margin-top:100px;
+  margin-top:140px;
 }
 
 .text-box{
-  margin: 24px 24px;
+  margin: 24px;
+  padding: 36px;
+  text-align: center;
+}
+
+.mapContainer{
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 24px;
 }
