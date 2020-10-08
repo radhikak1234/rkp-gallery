@@ -1,4 +1,6 @@
-This project is eventually going to become my main photography website. I wanted to learn react but also create a website that I actually cared about and so I figured, why not build something that will help fuel my other passion.
+This project is a photo gallery for my own photography (and also my attempt to learn React). Thie project features building a few of my own components from scrach, utilizing external componnets, playing around with flexbox, and consuming the google maps API to show clients where I have photographed and what album link to the pins on the map.
+
+I eventually will build this out into a full stack web-app and host my photos elsewhere (s3,firebase,etc).
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
