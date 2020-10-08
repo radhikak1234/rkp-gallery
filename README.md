@@ -1,4 +1,4 @@
-This project is a photo gallery for my own photography (and also my attempt to learn React). Thie project features building a few of my own components from scrach, utilizing external componnets, playing around with flexbox, and consuming the google maps API to show clients where I have photographed and what album link to the pins on the map.
+This project is a photo gallery for my own photography (and also my attempt to learn React). This project features me building a few of my own components from scrach, utilizing external components, playing around with flexbox, and consuming the google maps API to show clients where I have photographed and what album link to the pins on the map.
 
 I eventually will build this out into a full stack web-app and host my photos elsewhere (s3,firebase,etc).
 
