@@ -81,10 +81,10 @@ class Places extends Component {
     const API_KEY = process.env.REACT_APP_API_KEY;
 
       return(
-        <div class="body">
+        <div className="body">
           <Header/>
           <Pagetitle title="places"/>
-          <div class="body">
+            <div className="text-box"> This map displays some of the locations of where I've photographed events/shoots. It can give you a great idea of where to do that surpise proposal on a dreamy mountain top, the best places in the city for a couples session, or a relaxed lush park for your family session. Each marker opens an informational window that will link you to the album(s) to see the photos! </div>
             <div className="mapContainer">
               <LoadScript
                 googleMapsApiKey={API_KEY}
@@ -114,7 +114,6 @@ class Places extends Component {
                 </GoogleMap>
               </LoadScript>
             </div>
-          </div>
         </div>
       )
   }

@@ -9,7 +9,7 @@ function GalleryItem(props){
       <a href={props.albumRoute}>
         <img className="image-thumbnail" src={process.env.PUBLIC_URL+props.albumThumbnail}></img>
       </a>
-      <div class="centered">{props.albumName}</div>
+      <div className="centered">{props.albumName}</div>
     </div>
   );
 }
