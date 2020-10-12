@@ -18,37 +18,36 @@ import firebase from '../Firebase.js'
 //   var imagesRef = storageRef.child('images');
 
 class Home extends Component {
-  state = {photos: []};
+  state = { photoUrls: [] };
 
-  getHomePhotos = () => {
+  getHomePhotos = async() => {
       let storage = firebase.storage();
       let storageRef = storage.ref();
       let homeStorageRef = storageRef.child('images/home');
-      homeStorageRef.listAll().then(result => {
-        result.items.forEach(imageRef => {
-        console.log(imageRef.location.path_);
-        this.downloadImage(imageRef.location.path_,storageRef);
-      });
-    }).catch(error => {
-      // Handle any errors
-      console.log(error);
-    });
+
+      try {
+        const homeStorageRefList = await homeStorageRef.listAll();
+
+        homeStorageRefList.items.forEach(imageRef => {
+          this.downloadImage(imageRef.location.path_, storageRef);
+        })
+
+      } catch (err) {
+        console.warn(err);
+      }
   }
 
-  downloadImage = (imageRef,storageRef) => {
-    console.log('downloading'+imageRef);
-    storageRef.child(imageRef).getDownloadURL().then(url=> {
-      let photos = this.state.photos;
-      photos.push(<div>
-          <img src={url}/>
-          </div>
-      );
-      this.setState({photos:photos});
-      console.log(photos);
-      return url;
-    }).catch(error => {
-      console.log(error);
-    });
+  downloadImage = async (imageRef,storageRef) => {
+    console.log('downloading ' + imageRef);
+    try {
+      const downloadUrl = await storageRef.child(imageRef).getDownloadURL();
+      this.setState({
+        photoUrls: [ ...this.state.photoUrls, downloadUrl ].sort()
+      });
+
+    } catch (err) {
+      console.warn(err)
+    }
   };
 
   componentDidMount(){
@@ -56,15 +55,20 @@ class Home extends Component {
   }
 
   render(){
-
     return(
       <div>
         <Header/>
         <div className="body">
-        {this.state.photos.length > 12 &&
+        {this.state.photoUrls.length &&
         <Carousel
           infiniteLoop useKeyboardArrows autoPlay dynamicHeight centerMode centerSlidePercentage={77} interval={2000}>
-          {this.state.photos}
+          {this.state.photoUrls.map(url => {
+            return (
+              <div>
+                <img src={url}/>
+              </div>
+            )
+          })}
           </Carousel>
         }
         </div>
